@@ -5,19 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animated Navigation</title>
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Menu Overlay -->
-  <div class="overlay" id="overlay">
-
+  <!-- Menu Overlay --> 
+  <!-- no problem in adding overlay-slide-left, it doesn't affect initial page load. it's hidden to the left -->
+  <div class="overlay overlay-slide-left" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+      <ul>
+        <!-- Because the slide-out class is transforming off the page we won't see it when we load the page -->
+        <li id="nav-1" class="slide-out-1"><a href="#sectiunea1">sectiunea1</a></li>
+        <li id="nav-2" class="slide-out-2"><a href="#sectiunea2">sectiunea2</a></li>
+        <li id="nav-3" class="slide-out-3"><a href="#sectiunea3">sectiunea3</a></li>
+        <li id="nav-4" class="slide-out-4"><a href="#sectiunea4">sectiunea4</a></li>
+        <li id="nav-5" class="slide-out-5"><a href="#sectiunea5">sectiunea5</a></li>
+        <li id="nav-6" class="slide-out-6"><a href="#sectiunea6">sectiunea6</a></li>
+        <li id="nav-7" class="slide-out-7"><a href="#sectiunea7">sectiunea7</a></li>
+        <li id="nav-8" class="slide-out-8"><a href="#sectiunea8">sectiunea8</a></li>
+      </ul>
+    </nav>
   </div>
+
+  <!-- Menu Bars -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
   <!-- Sections -->
-  <section id="home"><a href="https://jacinto.design" target="_blank">Jacinto Design</a></section>
-  <section id="about"><h1>Learn More About Me</h1></section>
-  <section id="skills"><h1>These Are My Strengths</h1></section>
-  <section id="projects"><h1>These Are My Results</h1></section>
-  <section id="contact"><h1>Available Anytime</h1></section>
+  <section id="sectiunea1"><h1>Istoric</h1></section>
+  <section id="sectiunea2"><h1>Ce este blockchain-ul?</h1></section>
+  <section id="sectiunea3"><h1>Cum funcționează un blockchain?</h1></section>
+  <section id="sectiunea4"><h1>Criptografie</h1></section>
+  <section id="sectiunea5"><h1>Mecanisme de consens</h1></section>
+  <section id="sectiunea6"><h1>Noduri</h1></section>
+  <section id="sectiunea7"><h1>Contracte inteligente</h1></section>
+  <section id="sectiunea8"><h1>Oportunități și limitări</h1></section>
 
   <!-- Script -->
   <script src="script.js"></script>
